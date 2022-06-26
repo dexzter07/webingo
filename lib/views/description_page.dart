@@ -67,6 +67,7 @@ class _DescriptionPageState extends State<DescriptionPage> {
                                   validator: RequiredValidator(errorText: 'Empty'),
                                   keyboardType: TextInputType.number,
                                   decoration: InputDecoration(
+                                    suffixText: 'Cm',
                                     floatingLabelBehavior:FloatingLabelBehavior.always,
                                     floatingLabelStyle: CustomTextStyle.smallTextStyle1(color: AppColors.primaryButtonColor),
                                     border: OutlineInputBorder(
@@ -97,6 +98,7 @@ class _DescriptionPageState extends State<DescriptionPage> {
                                   validator: RequiredValidator(errorText: 'Empty'),
                                   keyboardType: TextInputType.number,
                                   decoration: InputDecoration(
+                                    suffixText: 'Cm',
                                     floatingLabelBehavior:FloatingLabelBehavior.always,
                                     floatingLabelStyle: CustomTextStyle.smallTextStyle1(color: AppColors.primaryButtonColor),
                                     border: OutlineInputBorder(
@@ -127,6 +129,7 @@ class _DescriptionPageState extends State<DescriptionPage> {
                                   validator: RequiredValidator(errorText: 'Empty'),
                                   keyboardType: TextInputType.number,
                                   decoration: InputDecoration(
+                                    suffixText: 'Cm',
                                     floatingLabelBehavior:FloatingLabelBehavior.always,
                                     floatingLabelStyle: CustomTextStyle.smallTextStyle1(color: AppColors.primaryButtonColor),
                                     border: OutlineInputBorder(
@@ -153,19 +156,6 @@ class _DescriptionPageState extends State<DescriptionPage> {
                             ],
                           ),
                           const SizedBox(height: 10,),
-                          const Divider(),
-                          Row(
-                            children: [
-                              const Spacer(),
-                              TextButton(onPressed: (){},
-                                  child: Text("Cancel",style: CustomTextStyle.smallBoldTextStyle1(color: AppColors.secondaryColor),)),
-                              const SizedBox(width: 20,),
-                              CustomButton(
-                                  borderRadius: BorderRadius.circular(15),
-                                  title: "Save", color: AppColors.primaryButtonColor, onTap: (){}),
-                            ],
-                          ),
-
 
                         ],
                       ),
@@ -212,8 +202,8 @@ class _DescriptionPageState extends State<DescriptionPage> {
                             validator: RequiredValidator(errorText: 'Empty'),
                             keyboardType: TextInputType.number,
                             decoration: InputDecoration(
+                              suffixText: 'Kg',
                               floatingLabelBehavior:FloatingLabelBehavior.always,
-                              floatingLabelStyle: CustomTextStyle.smallTextStyle1(color: AppColors.primaryButtonColor),
                               border: OutlineInputBorder(
                                 borderRadius: BorderRadius.circular(15),
                                 borderSide: const BorderSide(width: 1, color: AppColors.disableButtonColor),
@@ -230,24 +220,13 @@ class _DescriptionPageState extends State<DescriptionPage> {
                             ),
                           ),
                           const SizedBox(height: 10,),
-                          const Divider(),
-                          Row(
-                            children: [
-                              const Spacer(),
-                              TextButton(onPressed: (){},
-                                  child: Text("Cancel",style: CustomTextStyle.smallBoldTextStyle1(color: AppColors.secondaryColor),)),
-                              const SizedBox(width: 20,),
-                              CustomButton(
-                                  borderRadius: BorderRadius.circular(15),
-                                  title: "Save", color: AppColors.primaryButtonColor, onTap: (){}),
-                            ],
-                          ),
+
 
 
                         ],
                       ),
                     ),
-                    const SizedBox(height: 20),
+                    SizedBox(height: Get.height * 0.1),
                     Container(
                       margin: const EdgeInsets.symmetric(horizontal: 10),
                       child: MaterialButton(

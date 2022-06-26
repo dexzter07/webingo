@@ -33,6 +33,7 @@ class DatabaseManager {
       'hsCode':hsCode,
       'date':date,
       'time':time,
+      'uid':uid
     });
   }
 }
